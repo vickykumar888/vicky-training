@@ -2,9 +2,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { auth, googleProvider } from "@/components/firebase/firebase";
-import { signInWithPopup, onAuthStateChanged, signOut } from "firebase/auth";
+
 import { useRouter } from "next/navigation";
+import { auth, googleProvider } from "@/components/firebase/firebase";
+import { signInWithPopup } from "firebase/auth";
 
 export default function AuthenticationPage() {
   const route = useRouter();
